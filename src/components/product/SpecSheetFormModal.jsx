@@ -34,10 +34,10 @@ export default function SpecSheetFormModal({ isOpen, onClose }) {
       if (response.ok) {
         setIsSubmitted(true);
         // Use the direct link to the user-uploaded, working PDF
-        const specSheetUrl = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/192652540_SentinelTowersS1Series.pdf';
+        const specSheetUrl = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/dc55a2292_Sentinel1TechnicalSpecs.pdf';
         const link = document.createElement('a');
         link.href = specSheetUrl;
-        link.setAttribute('download', 'Sentinel_Towers_S1_Series_Spec_Sheet.pdf');
+        link.setAttribute('download', 'Sentinel_1_Technical_Specifications.pdf');
         document.body.appendChild(link);
         link.click();
         link.parentNode.removeChild(link);

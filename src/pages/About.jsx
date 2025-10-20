@@ -34,14 +34,13 @@ export default function About() {
             </p>
           </div>
           <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-full object-cover"
-              src="https://res.cloudinary.com/dl71jvny5/video/upload/v1755228549/IMG_0827_feaiwy.mov"
-            />
+            <iframe
+              src="https://customer-bxtyzsbpql47g1fu.cloudflarestream.com/d5fe580438b0e1352acd8a01fcd3bed3/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-bxtyzsbpql47g1fu.cloudflarestream.com%2Fd5fe580438b0e1352acd8a01fcd3bed3%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false"
+              className="w-full h-full"
+              style={{ border: 'none', transform: 'scale(3.2)' }}
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+              allowFullScreen={true}
+            ></iframe>
           </div>
         </div>
       </section>
@@ -85,7 +84,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-[#cbe30b]/10 to-transparent rounded-2xl transform rotate-3"></div>
               <img 
-                src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754873426/DSC05269_ksgvck.jpg"
+                src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/1e0281c0-a49f-4ef2-f463-08509ca31100/public"
                 alt="Sentinel Tower in field" 
                 className="relative w-full h-auto rounded-2xl shadow-2xl"
               />
@@ -133,7 +132,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-l from-[#cbe30b]/10 to-transparent rounded-2xl transform -rotate-2"></div>
               <img 
-                src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754615173/IMG_3048_c41gow.jpg" 
+                src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/9132577e-fd98-4957-7450-2982993b4d00/public" 
                 alt="Manufacturing process showing tower components" 
                 className="relative w-full h-auto rounded-2xl shadow-2xl"
               />
@@ -144,7 +143,7 @@ export default function About() {
             <div className="order-2 lg:order-1 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-[#cbe30b]/10 to-transparent rounded-2xl transform rotate-2"></div>
               <img 
-                src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754615173/IMG_3045_qyxquu.jpg" 
+                src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/bd4d8d04-36f4-4bab-962c-b598c8326b00/public" 
                 alt="Tower assembly in manufacturing facility" 
                 className="relative w-full h-auto rounded-2xl shadow-2xl"
               />

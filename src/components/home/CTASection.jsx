@@ -32,11 +32,11 @@ export default function CTASection() {
           
           <div className="flex items-center space-x-6">
             <a 
-              href="tel:+12566555078" 
+              href="tel:+12566900143" 
               className="flex items-center space-x-2 text-[#e5e5e5] hover:text-[#cbe30b] transition-colors duration-300"
             >
               <Phone className="w-5 h-5" />
-              <span className="font-medium">256-655-5078</span>
+              <span className="font-medium">256-690-0143</span>
             </a>
             <a 
               href="mailto:contact@sentineltowers.com" 

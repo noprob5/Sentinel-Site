@@ -1,41 +1,40 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { ArrowRight, CheckCircle, Shield, Building, Bot, Eye, BarChart } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, Eye, DollarSign, Clock } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
 import NewCTASection from '../components/home/NewCTASection';
 
 const stats = [
-  { number: "75%", label: "Reduction in Incidents", description: "At client sites after 90 days" },
-  { number: "15 min", label: "Deployment Time", description: "For immediate asset protection" },
-  { number: "10x", label: "More Area Covered", description: "Than a traditional security guard" },
-  { number: "$2.5K+", label: "Monthly ROI", description: "Per tower vs. guard costs" }
+  { number: "75%", label: "Reduction in Security Costs", description: "Compared to traditional guard services" },
+  { number: "24/7", label: "Autonomous Operation", description: "No human supervision required" },
+  { number: "95%", label: "Crime Deterrence Rate", description: "Verified through customer deployments" },
+  { number: "15min", label: "Deployment Time", description: "From arrival to full operation" }
 ];
 
 const challenges = [
-  "High cost and unreliability of traditional guard services.",
-  "Protecting large, open areas like construction sites or storage yards.",
-  "Preventing theft of high-value assets like copper, fuel, and equipment.",
-  "Lack of actionable video evidence for prosecution.",
-  "Needing a visible deterrent to proactively stop crime."
+  "Rising costs of traditional security guard services.",
+  "Difficulty securing large perimeters with limited personnel.",
+  "Need for 24/7 monitoring without the overhead of full-time staff.",
+  "Requirement for reliable evidence collection for insurance claims.",
+  "Liability concerns from inadequate security coverage."
 ];
 
 const benefits = [
-  { icon: BarChart, title: "Drastic Cost Reduction", description: "Replace expensive, unreliable guard services with a cost-effective technology solution that provides a clear return on investment." },
-  { icon: Shield, title: "Proactive Deterrence", description: "A highly visible, 30-foot tower with flashing lights and audible alarms stops criminals before they act." },
-  { icon: Building, title: "Total Site Awareness", description: "Monitor your entire property—from the fence line to the rooftops—from any device, anywhere in the world." },
-  { icon: Eye, title: "Actionable Evidence", description: "Capture crystal-clear video evidence that leads to arrests and convictions, ending the cycle of repeat offenses." }
+  { icon: DollarSign, title: "Proven ROI", description: "Reduce security costs by up to 75% compared to traditional guard services while improving coverage and reliability." },
+  { icon: Eye, title: "Comprehensive Coverage", description: "Monitor large areas with fewer assets. One tower provides the coverage equivalent of multiple guard stations." },
+  { icon: Shield, title: "Active Deterrence", description: "Prevent incidents before they happen with visible presence, strobes, and automated audio warnings." },
+  { icon: Clock, title: "Always On Duty", description: "Never worry about no-shows, breaks, or shift changes. Your security is operational 24/7/365." }
 ];
 
 const faqItems = [
-    { question: "Is this more effective than a security guard?", answer: "Yes. The Sentinel Tower provides a 30-foot high vantage point, never sleeps, can see in complete darkness with thermal imaging, and monitors your entire property simultaneously. It's a massive force multiplier and a more reliable deterrent." },
-    { question: "How does the system handle false alarms from animals or weather?", answer: "Our system uses advanced AI to differentiate between humans, vehicles, and other motion. This dramatically reduces false alarms, ensuring that you are only alerted to genuine threats." },
-    { question: "What happens if the internet or power goes out on site?", answer: "The tower is completely autonomous. It runs on solar and battery power and records all footage locally. If the cellular connection is lost, it will upload the footage as soon as service is restored. It never stops watching." },
-    { question: "Can I view the cameras from my phone?", answer: "Yes. You can access live video feeds, review recorded events, and receive alerts directly on your smartphone, tablet, or computer through our secure cloud-based platform." },
-    { question: "How difficult is it to set up?", answer: "It's incredibly simple. The tower can be towed to your site and deployed by a single person in under 15 minutes. No special technical skills are required." }
+    { question: "How does the cost compare to hiring security guards?", answer: "Our mobile surveillance typically costs 60-75% less than equivalent guard coverage. You eliminate hourly wages, benefits, training costs, and liability issues while getting superior coverage and documentation." },
+    { question: "Can this system work in areas without power or internet?", answer: "Yes, that's exactly what it's designed for. Each tower is completely self-sufficient with solar power, battery backup, and cellular connectivity. No infrastructure required." },
+    { question: "What happens if someone tries to tamper with or damage the tower?", answer: "The system has multiple tamper detection features including vibration sensors, tilt detection, and continuous self-monitoring. Any interference triggers immediate alerts and is recorded in high definition." },
+    { question: "How quickly can you deploy a tower to my site?", answer: "We can typically deploy within 24-48 hours of your call. The tower itself can be operational within 15 minutes of arrival on-site." },
+    { question: "Do you provide the monitoring service or do I need my own security team?", answer: "We offer flexible options. You can receive alerts directly and monitor through our platform, or we can provide professional monitoring services with trained security personnel responding to alerts." }
 ];
 
 export default function PrivateSecurity() {
@@ -45,8 +44,8 @@ export default function PrivateSecurity() {
       <section className="relative min-h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754954268/critical_infrastructure_mn07p6.png" 
-            alt="Construction site at dusk" 
+            src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/cb38c2db-c67c-4a9e-2926-fbcd3005e500/public" 
+            alt="Private security surveillance" 
             className="w-full h-full object-cover opacity-40" 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent"></div>
@@ -59,7 +58,7 @@ export default function PrivateSecurity() {
             transition={{ duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight"
           >
-            Security That <br/>Pays for Itself
+            Smarter Security. <br/>Proven <span className="text-[#cbe30b]">ROI</span>.
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -67,7 +66,7 @@ export default function PrivateSecurity() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-gray-300 leading-relaxed mt-8 max-w-2xl mx-auto"
           >
-            Stop losing money to theft, vandalism, and unreliable guards. Our autonomous surveillance towers provide a proven ROI by proactively securing your assets 24/7.
+            Replace expensive guard services with autonomous surveillance that works around the clock, delivering superior security at a fraction of the cost.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -76,7 +75,7 @@ export default function PrivateSecurity() {
             className="flex flex-col sm:flex-row gap-4 mt-10 justify-center"
           >
             <Button asChild className="bg-[#cbe30b] hover:bg-[#a8bf0a] text-black px-8 py-3 text-lg font-semibold">
-              <Link to={createPageUrl("Contact")}>Get a Free Quote</Link>
+              <Link to={createPageUrl("Contact")}>Calculate Your ROI</Link>
             </Button>
           </motion.div>
         </div>
@@ -86,8 +85,8 @@ export default function PrivateSecurity() {
       <section className="py-16 sm:py-24 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">The Smarter Security Investment</h2>
-            <p className="text-lg text-gray-400">The numbers don't lie. Sentinel Towers delivers results that directly impact your bottom line.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">The Numbers Don't Lie</h2>
+            <p className="text-lg text-gray-400">Measurable results that improve your bottom line while enhancing security.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {stats.map((stat) => (
@@ -106,10 +105,10 @@ export default function PrivateSecurity() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
           <div className="lg:pr-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-              The Challenge: <span className="text-gray-500">Stop Reacting. Start Preventing.</span>
+              The Challenge: <span className="text-gray-500">Rising Security Costs, Declining Reliability</span>
             </h2>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              Your business is likely facing one of these costly challenges. Our solution is designed to solve them all.
+              Traditional security is becoming more expensive and less reliable. Guard services are costly, inconsistent, and create liability concerns while providing limited coverage.
             </p>
             <div className="space-y-4 text-gray-300 text-lg">
               {challenges.map((challenge) => (
@@ -121,7 +120,7 @@ export default function PrivateSecurity() {
             </div>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/dl71jvny5/image/upload/v1753154767/2_towers_transparent_vvuvgo.png" alt="Two Sentinel Towers" className="w-full h-auto"/>
+            <img src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/33d85a3e-4e88-4481-ab4f-56dddb80ab00/public" alt="Security guard patrol" className="w-full h-auto shadow-2xl shadow-black/50"/>
           </div>
         </div>
       </section>
@@ -131,10 +130,10 @@ export default function PrivateSecurity() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              The Solution: <span className="text-[#cbe30b]">A Platform for Profitability</span>
+              The Solution: <span className="text-[#cbe30b]">Autonomous, Always-On Security</span>
             </h2>
             <p className="text-lg text-gray-400">
-              Sentinel Towers isn't a security expense; it's a business tool designed to protect your profits.
+              Deploy intelligent surveillance that works 24/7, costs less than traditional security, and provides better results.
             </p>
           </div>
 
@@ -157,7 +156,7 @@ export default function PrivateSecurity() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#050505]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">Your Questions, Answered</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">Frequently Asked Questions</h2>
           </div>
           <Accordion type="single" collapsible className="w-full">
             {faqItems.map((item, index) => (

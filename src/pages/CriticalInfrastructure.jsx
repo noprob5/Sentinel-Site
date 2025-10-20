@@ -45,7 +45,7 @@ export default function CriticalInfrastructure() {
       <section className="relative min-h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754059820/critical_infrastructure_z8kslq.jpg" 
+            src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/b6885b4d-37c2-41c6-3b83-58eb7abe7100/public" 
             alt="Industrial water treatment facility" 
             className="w-full h-full object-cover opacity-40" 
           />
@@ -121,7 +121,7 @@ export default function CriticalInfrastructure() {
             </div>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754059855/critical_infrastructure_xliogv.jpg" alt="Water dam infrastructure" className="w-full h-auto shadow-2xl shadow-black/50"/>
+            <img src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/5b212894-c8eb-403b-56dd-95b4c04fd600/public" alt="Water dam infrastructure" className="w-full h-auto shadow-2xl shadow-black/50"/>
           </div>
         </div>
       </section>

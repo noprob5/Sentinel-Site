@@ -197,7 +197,7 @@ export default function NewCTASection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Sales & Integration</h4>
-                  <p className="text-[#666666] mb-2">256-655-5078</p>
+                  <p className="text-[#666666] mb-2">256-690-0143</p>
                   <p className="text-[#666666] text-sm">Monday - Friday, 8AM - 6PM CST</p>
                 </div>
               </div>

@@ -9,7 +9,7 @@ const solutions = [
   {
     name: "Sentinel 1",
     description: "Solar + lithium battery platform for surveillance, communications, and light radar",
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755118472/DSC05269_qxxf3d.jpg",
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/b5bab9e5-bd1b-4545-b5a2-52f0aedfc300/public",
     icon: Battery,
     specs: {
       power: "400-800W Solar",
@@ -22,7 +22,7 @@ const solutions = [
   {
     name: "Sentinel Advantage",
     description: "Hybrid solar + battery + generator platform for higher-draw equipment",
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755118473/tower_in_desert_d54spo.png",
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/62a2a532-d342-412f-d36e-cc7327a36000/public",
     icon: Zap,
     specs: {
       power: "400-800W Solar",
@@ -35,7 +35,7 @@ const solutions = [
   {
     name: "Sentinel Advantage+",
     description: "Heavy-duty generator platform for radar, EW systems, and industrial applications",
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755123765/Sentinel_Advantage_jacaxw.jpg",
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/59f7962d-5209-406b-1046-2407e2ca8a00/public",
     icon: Fuel,
     specs: {
       power: "No Solar",

@@ -46,7 +46,7 @@ export default function MilitaryAndDefense() {
       <section className="relative min-h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://res.cloudinary.com/dl71jvny5/image/upload/v1755233702/military_hero_uxf8zh.png" 
+            src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/f8911ba4-748a-4336-3559-342ec4cb5300/public" 
             alt="Military base perimeter" 
             className="w-full h-full object-cover opacity-40" 
           />
@@ -100,7 +100,7 @@ export default function MilitaryAndDefense() {
             </div>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754059855/military_ejny0h.jpg" alt="Soldiers in formation" className="w-full h-auto shadow-2xl shadow-black/50"/>
+            <img src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/1d025d76-9d0c-4653-20e1-c8edb03b1300/public" alt="Soldiers in formation" className="w-full h-auto shadow-2xl shadow-black/50"/>
           </div>
         </div>
       </section>

@@ -1,9 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { ArrowRight, Zap, Fuel, Radar } from "lucide-react";
+import { ArrowRight, Radar, Zap, Fuel } from "lucide-react";
 
 export default function SentinelAdvantagePlusOverview() {
   return (
@@ -17,7 +16,7 @@ export default function SentinelAdvantagePlusOverview() {
         <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-[#cbe30b]/50 to-transparent"></div>
         <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-transparent via-[#cbe30b]/50 to-transparent"></div>
         <div className="absolute top-0 right-0 w-2 h-full bg-gradient-to-b from-transparent via-[#cbe30b]/50 to-transparent"></div>
-        
+
         {/* Floating Elements */}
         <div className="absolute top-1/3 left-1/4 w-4 h-4 bg-[#cbe30b]/60 animate-ping"></div>
         <div className="absolute bottom-1/3 right-1/4 w-3 h-3 bg-[#cbe30b]/40 animate-ping delay-500"></div>
@@ -31,7 +30,7 @@ export default function SentinelAdvantagePlusOverview() {
             <span className="text-red-400 font-bold text-lg sm:text-xl tracking-widest">TOP SECRET • PROTOTYPE</span>
             <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
           </div>
-          
+
           <h2 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-white mb-6 sm:mb-8 leading-tight">
             20<span className="text-[#cbe30b]">kW</span>
             <br />
@@ -40,15 +39,10 @@ export default function SentinelAdvantagePlusOverview() {
         </div>
       </section>
 
-      {/* Power Visualization */}
+      {/* Power Visualization Section */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="relative">
-            {/* Central Power Core */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-32 h-32 bg-[#cbe30b]/20 rounded-full animate-pulse blur-2xl"></div>
-            </div>
-            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
               {[
                 { icon: Radar, title: "Radar Arrays", power: "8kW+" },
@@ -84,7 +78,7 @@ export default function SentinelAdvantagePlusOverview() {
               Revolutionary capabilities designed for the most demanding applications.
             </p>
           </div>
-          
+
           <Button asChild className="bg-gradient-to-r from-[#cbe30b] to-[#a8bf0a] hover:from-[#a8bf0a] hover:to-[#cbe30b] text-black px-12 py-6 text-xl font-bold shadow-2xl shadow-[#cbe30b]/25 group">
             <Link to={createPageUrl("Contact")}>
               Request Briefing

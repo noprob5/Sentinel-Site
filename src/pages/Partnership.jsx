@@ -126,7 +126,7 @@ export default function Partnership() {
       <section className="relative flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-48 lg:py-64">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754954268/critical_infrastructure_mn07p6.png"
+            src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/cb38c2db-c67c-4a9e-2926-fbcd3005e500/public"
             alt="Business partners discussing strategy"
             className="w-full h-full object-cover opacity-40 object-right"
           />

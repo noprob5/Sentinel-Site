@@ -1,24 +1,10 @@
+
 import React from "react";
 
-const certifications = [
-  {
-    src: "https://res.cloudinary.com/dl71jvny5/image/upload/v1753154937/madeinusa2_xtt6ko.png",
-    alt: "Made in USA",
-    title: "Proudly American-Made",
-    description: "Every Sentinel Tower is designed, engineered, and manufactured in the USA, ensuring the highest standards of quality, craftsmanship, and materials."
-  },
-  {
-    src: "https://res.cloudinary.com/dl71jvny5/image/upload/v1753154934/ndaa_uuk0be.png",
-    alt: "NDAA Compliant",
-    title: "NDAA Compliant",
-    description: "Our hardware and software are fully compliant with government and military security requirements, making us a trusted partner for federal applications."
-  },
-  {
-    src: "https://res.cloudinary.com/dl71jvny5/image/upload/v1753154939/iso_hbxaie.png",
-    alt: "ISO Certified",
-    title: "ISO 9001 Certified",
-    description: "Our manufacturing process is ISO 9001 certified, guaranteeing consistent quality, reliability, and continuous improvement in every tower we build."
-  }
+const logos = [
+  { src: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/6483168a-5903-4603-802c-77ceb9c85b00/public", alt: "NDAA Compliant" },
+  { src: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/a7b1a214-93d5-4493-d819-87f7459ab000/public", alt: "Made in the USA" },
+  { src: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/72786b4d-b496-48f9-78f9-fcdfd6f5cb00/public", alt: "ISO 9001" },
 ];
 
 export default function TrustSection() {
@@ -31,15 +17,14 @@ export default function TrustSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-12">
-          {certifications.map((cert, index) => (
+          {logos.map((logo, index) => (
             <div key={index} className="text-center">
               <img 
-                src={cert.src} 
-                alt={cert.alt} 
+                src={logo.src} 
+                alt={logo.alt} 
                 className="h-20 mx-auto mb-6 filter brightness-90 hover:brightness-100 transition-all duration-300"
               />
-              <h3 className="text-xl font-bold text-white mb-3">{cert.title}</h3>
-              <p className="text-[#666666] leading-relaxed">{cert.description}</p>
+              {/* Removed h3 and p tags as new logo data does not contain title and description */}
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { AdvancedTabs } from "@/components/ui/AdvancedTabs";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,14 +10,32 @@ import {
 } from "lucide-react";
 
 const features = {
-  power: [
-    { title: "Hybrid Power System", description: "400-800W solar array combined with 1,500Ah lithium battery bank for baseline power" },
-    { title: "3kW Auto-Start Generator", description: "Intelligent backup generator automatically starts when battery levels drop or power demand exceeds solar capacity" },
-    { title: "Uninterrupted Operation", description: "Seamless transition between solar, battery, and generator power ensures zero downtime for critical systems" },
-    { title: "Extended Runtime", description: "Operates continuously for weeks without sun, with automatic fuel management and monitoring" },
-    { title: "Smart Load Management", description: "Intelligent power distribution prioritizes critical systems and optimizes fuel consumption" },
-    { title: "Remote Monitoring", description: "Real-time power status, fuel levels, and system health monitoring via cloud dashboard" }
-  ],
+  camera: {
+    hero: {
+      title: "High-Performance ISR Payloads",
+      description: "Integrates with advanced long-range camera systems, radar, and signals intelligence equipment.",
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/f1900b40-d103-4515-7285-c21f6ebf1a00/public"
+    },
+    // Although the outline didn't explicitly list specs for camera,
+    // the structure implies consistency with power, and FeatureContent expects a 'specs' array.
+    // Adding an empty array here ensures future compatibility if a 'camera' tab is added.
+    specs: [] 
+  },
+  power: {
+    hero: {
+      title: "Hybrid Power System",
+      description: "Combines a 400-800W solar array with a 1,500Ah battery and a 3kW auto-start diesel generator for continuous operation.",
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/892c122d-2c01-42af-49fa-5e5e40556600/public"
+    },
+    specs: [ // This array contains the original power features
+      { title: "Hybrid Power System", description: "400-800W solar array combined with 1,500Ah lithium battery bank for baseline power" },
+      { title: "3kW Auto-Start Generator", description: "Intelligent backup generator automatically starts when battery levels drop or power demand exceeds solar capacity" },
+      { title: "Uninterrupted Operation", description: "Seamless transition between solar, battery, and generator power ensures zero downtime for critical systems" },
+      { title: "Extended Runtime", description: "Operates continuously for weeks without sun, with automatic fuel management and monitoring" },
+      { title: "Smart Load Management", description: "Intelligent power distribution prioritizes critical systems and optimizes fuel consumption" },
+      { title: "Remote Monitoring", description: "Real-time power status, fuel levels, and system health monitoring via cloud dashboard" }
+    ]
+  },
   integration: [
     { title: "High-Power Equipment Support", description: "Designed for radar systems, EW equipment, and communications arrays requiring up to 3kW continuous power" },
     { title: "Ruggedized Mounting", description: "Military-grade shock and vibration resistant mounting systems for sensitive equipment" },
@@ -62,7 +81,8 @@ const FeatureContent = ({ specs }) => (
 
 export default function SentinelAdvantageFeatures() {
   const tabs = [
-    { id: 'power', title: 'Hybrid Power', icon: Battery, content: <FeatureContent specs={features.power} /> },
+    // Updated to access 'specs' array within the 'power' object
+    { id: 'power', title: 'Hybrid Power', icon: Battery, content: <FeatureContent specs={features.power.specs} /> },
     { id: 'integration', title: 'Integration', icon: Zap, content: <FeatureContent specs={features.integration} /> },
     { id: 'connectivity', title: 'Connectivity', icon: Wifi, content: <FeatureContent specs={features.connectivity} /> },
     { id: 'physical', title: 'Platform', icon: Ruler, content: <FeatureContent specs={features.physical} /> }

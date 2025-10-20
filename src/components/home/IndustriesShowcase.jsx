@@ -14,7 +14,7 @@ const industriesData = [
     icon: Building,
     title: "Commercial",
     content: {
-      image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop',
+      image: 'https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/38d5a1ed-3d88-4c4f-a4fc-6a14fb906400/public', // Replaced Cloudinary link with new link for Construction/Commercial
       title: 'Protecting Commercial Properties',
       verticals: ['Construction Sites', 'Office Buildings', 'Parking Garages', 'Logistics Centers'],
       useCases: ['Prevent theft of materials and equipment', 'Monitor for unauthorized access', 'Deter vandalism and property damage'],
@@ -26,7 +26,7 @@ const industriesData = [
     icon: Factory,
     title: "Industrial",
     content: {
-      image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop',
+      image: 'https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/3a7cd2b0-74fa-4f0d-6959-91be4eff6500/public', // Replaced Cloudinary link with new link for Energy & Utilities/Industrial
       title: 'Securing Industrial Facilities',
       verticals: ['Manufacturing Plants', 'Warehouses', 'Energy Sector', 'Utility Substations'],
       useCases: ['Secure vast perimeters and access points', 'Protect critical infrastructure', 'Monitor for safety compliance'],
@@ -38,7 +38,7 @@ const industriesData = [
     icon: Store,
     title: "Retail",
     content: {
-      image: 'https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?q=80&w=2071&auto=format&fit=crop',
+      image: 'https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/93f37d17-a6c2-4e14-8b16-f0de8a33d000/public', // Replaced Cloudinary link with new link for Automotive Dealerships/Retail
       title: 'Retail & Automotive Lot Security',
       verticals: ['Car Dealerships', 'Big Box Retailers', 'Shopping Centers', 'Distribution Hubs'],
       useCases: ['Prevent vehicle and inventory theft', 'Deter "push-out" theft and vandalism', 'Monitor parking lots for safety'],
@@ -50,7 +50,7 @@ const industriesData = [
     icon: ShieldCheck,
     title: "Public Safety",
     content: {
-      image: 'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=1996&auto=format&fit=crop',
+      image: 'https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/4da53a2f-9ef3-4b07-4949-f139ff0e3900/public', // Replaced Cloudinary link with new link for Transportation/Public Safety
       title: 'Enhancing Community & Event Security',
       verticals: ['Law Enforcement', 'Public Parks', 'Festivals & Events', 'Emergency Management'],
       useCases: ['Provide situational awareness for officers', 'Monitor crowd flow and public spaces', 'Deter illegal dumping and activity'],

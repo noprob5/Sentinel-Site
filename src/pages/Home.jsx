@@ -1,3 +1,4 @@
+
 import React from "react";
 import NewHeroSection from "../components/home/NewHeroSection";
 import ScrollingTruckSection from "../components/home/ScrollingTruckSection";

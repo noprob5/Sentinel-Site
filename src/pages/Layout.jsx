@@ -7,6 +7,8 @@ import { Menu, X, Plus, Minus, Phone, Mail, Shield, Zap, Users, Building2, MapPi
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion, AnimatePresence } from 'framer-motion';
+import AnalyticsLoader from "@/components/AnalyticsLoader";
+import GTMLoader from "@/components/GTMLoader"; // Assuming GTMLoader is in components directory
 
 const solutionsData = [
   { 
@@ -17,7 +19,7 @@ const solutionsData = [
     content: { 
       title: "Sentinel 1: Solar + Battery Platform", 
       description: "Configurable 400-800W solar with 1,500Ah lithium battery bank. Ideal for surveillance, communications relay, edge computing, and light radar systems with up to 2kW continuous load.", 
-      image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755118472/DSC05269_qxxf3d.jpg" 
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/b5bab9e5-bd1b-4545-b5a2-52f0aedfc300/public" 
     } 
   },
   { 
@@ -28,7 +30,7 @@ const solutionsData = [
     content: { 
       title: "Sentinel Advantage: Hybrid Power Platform", 
       description: "Combines 400-800W solar, 1,500Ah lithium batteries, and integrated 3kW auto-start generator. Supports up to 3kW continuous load without downtime for mission-critical operations.", 
-      image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755118473/tower_in_desert_d54spo.png" 
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/62a2a532-d342-412f-d36e-cc7327a36000/public" 
     } 
   },
   { 
@@ -39,30 +41,30 @@ const solutionsData = [
     content: { 
       title: "Sentinel Advantage+: Heavy-Duty Power Platform", 
       description: "Primary 20kW generator platform designed for radar arrays, EW systems, runway lighting, and other high-power continuous-load applications up to 20kW.", 
-      image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755123765/Sentinel_Advantage_jacaxw.jpg" 
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/59f7962d-5209-406b-1046-2407e2ca8a00/public" 
     } 
   }
 ];
 
 const capabilitiesData = [
-  { name: "Electronic Warfare Support", url: createPageUrl("Capabilities#electronic-warfare-support"), icon: Radio, content: { title: "Dominate the Spectrum", description: "Our platforms provide the stable, high-power foundation your EW equipment needs to operate effectively, from SIGINT to tactical jamming.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754940069/EW_warfare_vmgmb6.png" } },
-  { name: "Systems Integration", url: createPageUrl("Capabilities#systems-integration"), icon: Shield, content: { title: "Your Tech, Mission-Ready", description: "Bring your own sensors, cameras, and software. Our team are experts at integrating third-party technology into our ruggedized mobile platforms.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942335/systems_integration_wplkjt.jpg" } },
-  { name: "Edge Computing", url: createPageUrl("Capabilities#edge-computing"), icon: Cpu, content: { title: "AI & Analytics at the Source", description: "Reduce latency and bandwidth requirements by processing data where it's collected with powerful onboard computing and AI accelerators.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942334/edge_computing_ywickp.jpg" } },
-  { name: "Surveillance & Monitoring", url: createPageUrl("Capabilities#surveillance-monitoring"), icon: Eye, content: { title: "Persistent Overwatch", description: "Deploy high-resolution cameras, thermal imagers, and ground-based radar for 360-degree, 24/7 situational awareness.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942334/surveillance_reuqa6.jpg" } },
-  { name: "Mobile Power Systems", url: createPageUrl("Capabilities#mobile-power-systems"), icon: Zap, content: { title: "Power Anywhere", description: "Our hybrid power systems ensure your critical equipment stays online in the most remote and austere environments.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942333/mobile_power_systems_srwiff.jpg" } },
-  { name: "Communications Relay", url: createPageUrl("Capabilities#communications-relay"), icon: Wifi, content: { title: "Extend Your Network", description: "Establish reliable LTE, mesh, and satellite communication networks where traditional infrastructure is unavailable.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942606/communications_relay_ntn0du.jpg" } }
+  { name: "Electronic Warfare Support", url: createPageUrl("Capabilities#electronic-warfare-support"), icon: Radio, content: { title: "Dominate the Spectrum", description: "Our platforms provide the stable, high-power foundation your EW equipment needs to operate effectively, from SIGINT to tactical jamming.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/4e11e108-856c-4e0a-6954-19c0a3eefb00/public" } },
+  { name: "Systems Integration", url: createPageUrl("Capabilities#systems-integration"), icon: Shield, content: { title: "Your Tech, Mission-Ready", description: "Bring your own sensors, cameras, and software. Our team are experts at integrating third-party technology into our ruggedized mobile platforms.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/1f2c8adf-baf2-4020-59ce-bae2574b0900/public" } },
+  { name: "Edge Computing", url: createPageUrl("Capabilities#edge-computing"), icon: Cpu, content: { title: "AI & Analytics at the Source", description: "Reduce latency and bandwidth requirements by processing data where it's collected with powerful onboard computing and AI accelerators.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/2c8e1000-f015-4e18-160b-ef3803267600/public" } },
+  { name: "Surveillance & Monitoring", url: createPageUrl("Capabilities#surveillance-monitoring"), icon: Eye, content: { title: "Persistent Overwatch", description: "Deploy high-resolution cameras, thermal imagers, and ground-based radar for 360-degree, 24/7 situational awareness.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/f1900b40-d103-4515-7285-c21f6ebf1a00/public" } },
+  { name: "Mobile Power Systems", url: createPageUrl("Capabilities#mobile-power-systems"), icon: Zap, content: { title: "Power Anywhere", description: "Our hybrid power systems ensure your critical equipment stays online in the most remote and austere environments.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/d13b028a-b74e-4262-8a80-059e495c5f00/public" } },
+  { name: "Communications Relay", url: createPageUrl("Capabilities#communications-relay"), icon: Wifi, content: { title: "Extend Your Network", description: "Establish reliable LTE, mesh, and satellite communication networks where traditional infrastructure is unavailable.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/8ff5533b-d9d7-4f45-1d3e-213ce3477a00/public" } }
 ];
 
 const industriesData = [
-  { name: "Military & Defense", url: createPageUrl("MilitaryAndDefense"), icon: Flag, content: { title: "For the Warfighter", description: "NDAA-compliant, battle-tested platforms for tactical operations, base security, and force protection.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755124958/military_ive0u6.jpg" } },
-  { name: "Law Enforcement & Public Safety", url: createPageUrl("LawEnforcement"), icon: Shield, content: { title: "A Tactical Force Multiplier", description: "Mobile command posts and surveillance platforms for crowd control, crime deterrence, and emergency response.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755124958/law_enforcement_zv0teu.jpg" } },
-  { name: "Critical Infrastructure Protection", url: createPageUrl("CriticalInfrastructure"), icon: Building2, content: { title: "Protecting Vital Assets", description: "Secure vital assets like power grids, water systems, and communication networks with autonomous monitoring.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754921340/DSC05578_m261e9.jpg" } },
-  { name: "Private Security", url: createPageUrl("PrivateSecurity"), icon: Lock, content: { title: "Proven ROI for Security Operations", description: "Enhanced security solutions for construction sites, commercial properties, and special events with proven ROI.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754954268/critical_infrastructure_mn07p6.png" } }
+  { name: "Military & Defense", url: createPageUrl("MilitaryAndDefense"), icon: Flag, content: { title: "For the Warfighter", description: "NDAA-compliant, battle-tested platforms for tactical operations, base security, and force protection.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/2456520c-1b70-4fee-7270-751a72657200/public" } },
+  { name: "Law Enforcement & Public Safety", url: createPageUrl("LawEnforcement"), icon: Shield, content: { title: "A Tactical Force Multiplier", description: "Mobile command posts and surveillance platforms for crowd control, crime deterrence, and emergency response.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/32ec378d-11be-4f37-4d50-a5ab6c2fcd00/public" } },
+  { name: "Critical Infrastructure Protection", url: createPageUrl("CriticalInfrastructure"), icon: Building2, content: { title: "Protecting Vital Assets", description: "Secure vital assets like power grids, water systems, and communication networks with autonomous monitoring.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/b6885b4d-37c2-41c6-3b83-58eb7abe7100/public" } },
+  { name: "Private Security", url: createPageUrl("PrivateSecurity"), icon: Lock, content: { title: "Proven ROI for Security Operations", description: "Enhanced security solutions for construction sites, commercial properties, and special events with proven ROI.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/cb38c2db-c67c-4a9e-2926-fbcd3005e500/public" } }
 ];
 
 const aboutData = [
-  { name: "Company Overview", url: createPageUrl("About"), icon: Building2, content: { title: "Who We Are", description: "We are engineers and innovators dedicated to creating the most reliable mobile surveillance solutions on the market.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755230061/IMG_0014_h53iol.jpg" } },
-  { name: "Partners", url: createPageUrl("Partnership"), icon: Users, content: { title: "Build Your Security Empire", description: "Join the mobile surveillance revolution. Unlike others who only lease, we offer you the opportunity to own your fleet.", image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755230813/partnership_uezpqr.png" } },
+  { name: "Company Overview", url: createPageUrl("About"), icon: Building2, content: { title: "Who We Are", description: "We are engineers and innovators dedicated to creating the most reliable mobile surveillance solutions on the market.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/ece10edd-9343-45b4-bb82-7eb4c23e9800/public" } },
+  { name: "Partners", url: createPageUrl("Partnership"), icon: Users, content: { title: "Build Your Security Empire", description: "Join the mobile surveillance revolution. Unlike others who only lease, we offer you the opportunity to own your fleet.", image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/b8727a17-d2e4-4ee4-5ac7-f4aa484c6c00/public" } },
   { name: "Contact", url: createPageUrl("Contact"), icon: Phone, content: { title: "Get in Touch", description: "Our integration specialists are ready to discuss your specific requirements and design a custom solution for your mission.", image: null } }
 ];
 
@@ -207,6 +209,14 @@ export default function Layout({ children, currentPageName }) {
   
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-[#e5e5e5]">
+      {/* Google Tag Manager (noscript) */}
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T37WP637"
+      height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
+      {/* End Google Tag Manager (noscript) */}
+
+      <GTMLoader />
+      <AnalyticsLoader />
+      
       <style>{`* { border-radius: 0 !important; }`}</style>
       
       <nav 
@@ -220,7 +230,7 @@ export default function Layout({ children, currentPageName }) {
               className={`relative flex items-center md:justify-center w-auto md:w-64 px-4 md:px-0 md:border-r transition-all duration-300 group ${ (headerWhite && !mobileMenuOpen && !isNavHovered) ? 'border-gray-300 text-black' : 'border-white text-white'}`}
             >
               <div className="absolute inset-0 -left-[100vw] w-[100vw] bg-black/50 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-out"></div>
-              <img src="https://res.cloudinary.com/dl71jvny5/image/upload/v1753155078/WhiteHorizontal_isyczu.png" alt="Sentinel Towers Logo" className={`relative z-10 h-8 md:h-10 w-auto transition-all duration-300 ${ (headerWhite && !mobileMenuOpen && !isNavHovered) ? 'filter invert' : ''}`} />
+              <img src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/b8c857b2-4b5f-4926-3bd8-3485b60b0200/public" alt="Sentinel Towers Logo" className={`relative z-10 h-8 md:h-10 w-auto transition-all duration-300 ${ (headerWhite && !mobileMenuOpen && !isNavHovered) ? 'filter invert' : ''}`} />
             </Link>
           </div>
 
@@ -323,7 +333,7 @@ export default function Layout({ children, currentPageName }) {
         <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <img src="https://res.cloudinary.com/dl71jvny5/image/upload/v1753155078/WhiteHorizontal_isyczu.png" alt="Sentinel Towers Logo" className="h-8 w-auto" />
+              <img src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/b8c857b2-4b5f-4926-3bd8-3485b60b0200/public" alt="Sentinel Towers Logo" className="h-8 w-auto" />
               <p className="text-[#666666] text-sm">Mobile power, communications, and integration platforms for mission-critical technologies.</p>
               <div className="flex space-x-4">
                 <a href="https://twitter.com/sentineltowers" target="_blank" rel="noopener noreferrer" className="text-[#666666] hover:text-[#cbe30b]"><svg className="w-5 h-5" fill="currentColor" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
@@ -360,7 +370,7 @@ export default function Layout({ children, currentPageName }) {
                 <li className="flex items-center gap-2 text-base text-[#666666]">
                   <Phone className="w-4 h-4"/> 
                   <div>
-                    <div>Sales: 256‑655‑5078</div>
+                    <div>Sales: 256‑690‑0143</div>
                     <div className="text-sm">sales@sentineltowers.com</div>
                   </div>
                 </li>

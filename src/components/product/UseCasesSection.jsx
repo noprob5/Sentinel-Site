@@ -14,7 +14,7 @@ const useCasesData = [
     icon: Lock,
     title: "Private Security",
     content: {
-      image: 'https://res.cloudinary.com/dl71jvny5/image/upload/v1754921273/Hero-bg-construction.jpg',
+      image: 'https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/33d85a3e-4e88-4481-ab4f-56dddb80ab00/public',
       title: 'Securing Commercial & Industrial Assets',
       verticals: ['Construction Sites', 'Auto Dealerships', 'Commercial Properties', 'Special Events'],
       useCases: ['Deter theft and vandalism', 'Monitor remote sites 24/7', 'Provide video evidence for incidents', 'Reduce liability and insurance costs'],
@@ -26,7 +26,7 @@ const useCasesData = [
     icon: Zap,
     title: "Critical Infrastructure",
     content: {
-      image: 'https://res.cloudinary.com/dl71jvny5/image/upload/v1755221912/DSC05697_fnbytf.jpg',
+      image: 'https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/3a7cd2b0-74fa-4f0d-6959-91be4eff6500/public',
       title: 'Protecting Essential Services',
       verticals: ['Electrical Substations', 'Water Treatment Plants', 'Data Centers', 'Communication Hubs'],
       useCases: ['Secure perimeters against intrusion', 'Monitor unmanned facilities', 'Automate compliance and reporting', 'Ensure operational continuity'],
@@ -38,7 +38,7 @@ const useCasesData = [
     icon: ShieldCheck,
     title: "Law Enforcement",
     content: {
-      image: 'https://res.cloudinary.com/dl71jvny5/image/upload/v1755221911/DSC05735_iyawtn.jpg',
+      image: 'https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/2e90d683-d197-4714-42e8-88110c883c00/public',
       title: 'A Tactical Force Multiplier',
       verticals: ['Police Departments', 'Sheriff\'s Offices', 'Public Safety Agencies', 'Emergency Management'],
       useCases: ['Monitor crime hotspots & public events', 'Provide overwatch for critical incidents', 'Gather high-quality video evidence', 'Establish mobile command posts quickly'],
@@ -50,7 +50,7 @@ const useCasesData = [
     icon: Flag,
     title: "Military & Defense",
     content: {
-      image: 'https://res.cloudinary.com/dl71jvny5/image/upload/v1755222221/tower_with_antenna_dlibg0.jpg',
+      image: 'https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/ce9d47da-d232-49f7-9abf-8274050cfa00/public',
       title: 'Mission-Ready ISR & Protection',
       verticals: ['Base Security', 'Force Protection', 'Tactical Operations', 'Training Ranges'],
       useCases: ['Provide persistent ISR for FOBs and perimeters', 'Monitor training exercises and ranges', 'Enhance security for high-value assets', 'Rapidly deploy for expeditionary missions'],

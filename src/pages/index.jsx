@@ -86,6 +86,10 @@ import Capabilities from "./Capabilities";
 
 import PrivateSecurity from "./PrivateSecurity";
 
+import smsoptin from "./smsoptin";
+
+import privacypolicy from "./privacypolicy";
+
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
@@ -175,6 +179,10 @@ const PAGES = {
     Capabilities: Capabilities,
     
     PrivateSecurity: PrivateSecurity,
+    
+    smsoptin: smsoptin,
+    
+    privacypolicy: privacypolicy,
     
 }
 
@@ -288,6 +296,10 @@ function PagesContent() {
                 <Route path="/Capabilities" element={<Capabilities />} />
                 
                 <Route path="/PrivateSecurity" element={<PrivateSecurity />} />
+                
+                <Route path="/smsoptin" element={<smsoptin />} />
+                
+                <Route path="/privacypolicy" element={<privacypolicy />} />
                 
             </Routes>
         </Layout>

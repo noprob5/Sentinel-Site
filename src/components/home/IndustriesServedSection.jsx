@@ -11,28 +11,28 @@ const industries = [
     icon: Shield,
     title: "Military & Defense",
     description: "Battle-tested platforms for tactical operations, base security, and force protection. NDAA compliant and mission-ready.",
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755124958/military_ive0u6.jpg",
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/2456520c-1b70-4fee-7270-751a72657200/public",
     url: createPageUrl("MilitaryAndDefense")
   },
   {
     icon: Users,
     title: "Law Enforcement & Public Safety", 
     description: "Mobile command posts and surveillance platforms for crowd control, crime deterrence, and emergency response.",
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755124958/law_enforcement_zv0teu.jpg",
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/32ec378d-11be-4f37-4d50-a5ab6c2fcd00/public",
     url: createPageUrl("LawEnforcement")
   },
   {
     icon: Building2,
     title: "Critical Infrastructure Protection",
     description: "Secure vital assets like power grids, water systems, and communication networks with autonomous monitoring.",
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754921340/DSC05578_m261e9.jpg",
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/b4d3a29e-b80d-48d9-97e4-ec480c2fac00/public",
     url: createPageUrl("CriticalInfrastructure")
   },
   {
     icon: Lock,
     title: "Private Security",
     description: "Enhanced security solutions for construction sites, commercial properties, and special events with proven ROI.",
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754954268/critical_infrastructure_mn07p6.png",
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/cb38c2db-c67c-4a9e-2926-fbcd3005e500/public",
     url: createPageUrl("PrivateSecurity")
   }
 ];

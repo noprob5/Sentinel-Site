@@ -2,9 +2,9 @@
 import React from 'react';
 
 const media = [
-  { type: 'video', src: 'https://res.cloudinary.com/dl71jvny5/video/upload/v1755217746/copy_C110EEDD-CCDB-4FBC-B240-A3E0FDDC2553_dsju8g.mov' },
-  { type: 'video', src: 'https://res.cloudinary.com/dl71jvny5/video/upload/v1753203055/AI_Dome-Jun_18_11_01_PM_-_Jun_18_11_05_PM_ubmsmq.mov' },
-  { type: 'video', src: 'https://res.cloudinary.com/dl71jvny5/video/upload/v1755217743/copy_ABCDED6B-CAB2-492B-8246-490AE8EF548D_q3cwaf.mov' },
+  { src: 'https://customer-bxtyzsbpql47g1fu.cloudflarestream.com/ac2b90fdf566c603343a11dc7347a9b3/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-bxtyzsbpql47g1fu.cloudflarestream.com%2Fac2b90fdf566c603343a11dc7347a9b3%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false' },
+  { src: 'https://customer-bxtyzsbpql47g1fu.cloudflarestream.com/cdf4d393d3a0cd9a311a0877c50d37a4/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-bxtyzsbpql47g1fu.cloudflarestream.com%2Fcdf4d393d3a0cd9a311a0877c50d37a4%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false' },
+  { src: 'https://customer-bxtyzsbpql47g1fu.cloudflarestream.com/60f049a97d62f92c094ba90c4994469a/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-bxtyzsbpql47g1fu.cloudflarestream.com%2F60f049a97d62f92c094ba90c4994469a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false' },
 ];
 
 export default function GallerySection() {
@@ -22,7 +22,13 @@ export default function GallerySection() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {media.map((item, index) => (
             <div key={index} className="aspect-video bg-[#1a1a1a] rounded-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
-              <video src={item.src} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+              <iframe
+                src={item.src}
+                className="w-full h-full"
+                style={{ border: 'none' }}
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                allowFullScreen={true}
+              />
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
@@ -18,7 +19,7 @@ export default function ScrollingTruckSection() {
       <div className="sticky top-0 h-full flex items-center">
         <motion.div style={{ x }} className="absolute left-0 w-[80vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
           <img
-            src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754954267/in_motion_mrcdnd.png"
+            src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/828efd39-c9cf-47b4-8627-b53c55af5700/public"
             alt="Sentinel tower being towed by a truck"
             className="w-full h-auto"
           />

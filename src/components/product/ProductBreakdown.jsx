@@ -28,7 +28,7 @@ export default function ProductBreakdown() {
           {/* Left side - Image */}
           <div className="flex justify-center">
             <img 
-              src="https://res.cloudinary.com/dl71jvny5/image/upload/v1755219320/S1_blank_mockup_back.pdf_ejnqah.png" 
+              src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/ff26ba04-5a56-42cc-6fdc-0ac058f0c400/public" 
               alt="Sentinel 1 Technical Breakdown"
               className="w-full max-w-lg h-auto"
             />

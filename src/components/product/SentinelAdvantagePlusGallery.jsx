@@ -1,12 +1,26 @@
+
 import React from 'react';
 
-const featuredImage = 'https://res.cloudinary.com/dl71jvny5/image/upload/v1755123765/Sentinel_Advantage_jacaxw.jpg';
-const secondaryImages = [
-  'https://res.cloudinary.com/dl71jvny5/image/upload/v1753202104/IMG_0581_b2cuxf.png',
-  'https://res.cloudinary.com/dl71jvny5/image/upload/v1754940069/EW_warfare_vmgmb6.png',
+const media = [
+  { type: 'video', src: 'https://customer-bxtyzsbpql47g1fu.cloudflarestream.com/1a485e6df4923b932d3ceaf8bcd9894d/watch' },
+  { type: 'video', src: 'https://customer-bxtyzsbpql47g1fu.cloudflarestream.com/5141f318a9de0242bdcb935fd4e35062/watch' },
+  { type: 'video', src: 'https://customer-bxtyzsbpql47g1fu.cloudflarestream.com/2806db334557476d23c625b1ce21f512/watch' },
 ];
 
+// Helper function to convert Cloudflare Stream watch URL to iframe embed URL
+const getCloudflareEmbedUrl = (watchUrl) => {
+  // Cloudflare Stream embed URLs typically end with '/iframe'
+  // The provided URLs end with '/watch', so we convert them.
+  if (watchUrl.includes('/watch')) {
+    return watchUrl.replace('/watch', '/iframe');
+  }
+  return watchUrl; // Return as is if format is unexpected
+};
+
 export default function SentinelAdvantagePlusGallery() {
+  const mainMedia = media[0];
+  const secondaryMedia = media.slice(1);
+
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-[#0d0d0d]">
       <div className="max-w-screen-xl mx-auto">
@@ -19,16 +33,44 @@ export default function SentinelAdvantagePlusGallery() {
           </p>
         </div>
         <div className="space-y-4">
-          <div className="aspect-video bg-[#1a1a1a] overflow-hidden group">
-            <img src={featuredImage} alt="Sentinel Advantage+ Featured" className="w-full h-full object-cover" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {secondaryImages.map((src, index) => (
-              <div key={index} className="aspect-video bg-[#1a1a1a] overflow-hidden group">
-                <img src={src} alt={`Sentinel Advantage+ Detail ${index + 1}`} className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
+          {mainMedia && (
+            <div className="aspect-video bg-[#1a1a1a] overflow-hidden group">
+              {mainMedia.type === 'video' ? (
+                <iframe
+                  src={getCloudflareEmbedUrl(mainMedia.src)}
+                  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                  allowFullScreen
+                  className="w-full h-full"
+                  style={{ border: 'none' }}
+                  title="Sentinel Advantage+ Main Video"
+                ></iframe>
+              ) : (
+                // Fallback for image type, though not expected with current 'media' array
+                <img src={mainMedia.src} alt="Sentinel Advantage+ Main" className="w-full h-full object-cover" />
+              )}
+            </div>
+          )}
+          {secondaryMedia.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {secondaryMedia.map((item, index) => (
+                <div key={index} className="aspect-video bg-[#1a1a1a] overflow-hidden group">
+                  {item.type === 'video' ? (
+                    <iframe
+                      src={getCloudflareEmbedUrl(item.src)}
+                      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                      allowFullScreen
+                      className="w-full h-full"
+                      style={{ border: 'none' }}
+                      title={`Sentinel Advantage+ Detail Video ${index + 1}`}
+                    ></iframe>
+                  ) : (
+                    // Fallback for image type
+                    <img src={item.src} alt={`Sentinel Advantage+ Detail ${index + 1}`} className="w-full h-full object-cover" />
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -45,7 +45,7 @@ export default function LawEnforcement() {
       <section className="relative min-h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754059821/law_enforcement_cuvicu.jpg" 
+            src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/3ecaa617-fd7c-4e76-f420-89df6a9aec00/public" 
             alt="Police patrol car on street" 
             className="w-full h-full object-cover opacity-40" 
           />
@@ -121,7 +121,7 @@ export default function LawEnforcement() {
             </div>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/dl71jvny5/image/upload/v1754059856/law_enforcement_ayriyz.jpg" alt="Police emergency lights" className="w-full h-auto shadow-2xl shadow-black/50"/>
+            <img src="https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/7b917ef8-3787-4c53-e178-fbd62b299100/public" alt="Police emergency lights" className="w-full h-auto shadow-2xl shadow-black/50"/>
           </div>
         </div>
       </section>

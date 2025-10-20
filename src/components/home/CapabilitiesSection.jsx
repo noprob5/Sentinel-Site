@@ -9,35 +9,35 @@ const capabilitiesData = {
     title: "Electronic Warfare Support",
     description: "Power and mount RF detection, jamming, and countermeasure systems. Our platform provides the stable, high-power foundation your EW equipment needs to operate effectively in the field.",
     features: ["High-power RF equipment support", "Electromagnetic shielding options", "Multi-frequency antenna mounting", "Extended runtime for continuous operations"],
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754940069/EW_warfare_vmgmb6.png"
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/4e11e108-856c-4e0a-6954-19c0a3eefb00/public"
   },
   "systems-integration": {
     icon: Cpu,
     title: "Systems Integration",
     description: "Bring your hardware and software; we make it mission-ready. Our engineering team works with you to integrate your technology seamlessly into our mobile platform.",
     features: ["Custom mounting solutions", "Power management integration", "Data connectivity options", "Environmental protection systems"],
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942335/systems_integration_wplkjt.jpg"
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/1f2c8adf-baf2-4020-59ce-bae2574b0900/public"
   },
   "edge-computing": {
     icon: Cpu,
     title: "Edge Computing",
     description: "Deploy AI and analytics at the source with onboard processing. Reduce latency and bandwidth requirements by processing data where it's collected.",
     features: ["High-performance computing platforms", "AI/ML processing capabilities", "Local data storage solutions", "Real-time analytics deployment"],
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942334/edge_computing_ywickp.jpg"
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/2c8e1000-f015-4e18-160b-ef3803267600/public"
   },
   "surveillance": {
     icon: Eye,
     title: "Surveillance & Recon",
     description: "Cameras, gunshot detection, and situational awareness tools. Mount and power advanced surveillance systems with 360-degree coverage and intelligent analytics.",
     features: ["Multi-sensor integration", "Thermal and night vision support", "Automated threat detection", "Real-time video streaming"],
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942334/surveillance_reuqa6.jpg"
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/f1900b40-d103-4515-7285-c21f6ebf1a00/public"
   },
   "communications": {
     icon: Wifi,
     title: "Communications Relay",
     description: "Provide LTE, mesh, and satellite uplink in remote areas. Establish reliable communications networks where traditional infrastructure isn't available.",
     features: ["Multi-band radio support", "Satellite communication integration", "Mesh network capabilities", "Emergency communication backup"],
-    image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754942606/communications_relay_ntn0du.jpg"
+    image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/8ff5533b-d9d7-4f45-1d3e-213ce3477a00/public"
   }
 };
 

@@ -13,7 +13,7 @@ const features = {
     hero: {
       title: "4K Camera & Active Deterrence",
       description: "Professional-grade surveillance with AI-powered analytics and active threat deterrence",
-      image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1753154762/IMG_9619_fsjgru.jpg"
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/ebd1f453-79f5-434b-eaca-dbdc17c07600/public"
     },
     specs: [
       { title: "4K Ultra HD Resolution", description: "Crystal clear video recording at 3840 × 2160 resolution" },
@@ -28,7 +28,7 @@ const features = {
     hero: {
       title: "Solar + Battery Power System",
       description: "Complete energy independence with renewable solar power and extended battery backup",
-      image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1755220390/IMG_0354_eteh4r.jpg"
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/f3317aa9-7e18-474e-f4ed-ec43df72c400/public"
     },
     specs: [
       { title: "400-800W Solar Array", description: "Four 200W monocrystalline panels provide reliable energy" },
@@ -41,7 +41,7 @@ const features = {
     hero: {
       title: "Advanced Connectivity Suite",
       description: "Real-time streaming and cloud management with cellular network options",
-      image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1753154757/IMG_9623_cwcqux.jpg"
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/8dd3842c-25c0-45ae-45af-a7a2275b9400/public"
     },
     specs: [
       { title: "Cellular Connectivity", description: "Reliable data transmission via cellular networks" },
@@ -54,7 +54,7 @@ const features = {
     hero: {
       title: "Rapid Deployment Platform",
       description: "Engineered for quick setup and reliable operation in any environment",
-      image: "https://res.cloudinary.com/dl71jvny5/image/upload/v1754921354/DSC05356_naxfds.jpg"
+      image: "https://imagedelivery.net/b-qZs7JHsDLDLCUFg8bbfg/6474e343-349d-4018-10ed-cb120ff10100/public"
     },
     specs: [
       { title: "15-Minute Setup", description: "Single-person deployment with no special tools required" },
